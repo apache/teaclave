@@ -25,6 +25,7 @@ header:
     - 'licenses'
     - 'LICENSE'
     - 'NOTICE'
+    - .gitattributes
 
     # Documentation and configuration files
     - '**/*.md'
