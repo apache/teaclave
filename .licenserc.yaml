@@ -21,18 +21,24 @@ header:
     copyright-owner: Apache Software Foundation
 
   paths-ignore:
-    - '**/*.csv'
-    - '**/*.txt'
-    - '**/*.md'
-    - '**/*.pem'
-    - '**/*.sha256'
-    - '**/*.xcodeproj/**'
-    - '**/Cargo.lock'
-    - '**/target/**'
-    - '.gitattributes'
-    - '.github/ISSUE_TEMPLATE/**'
-    - '.gitmodules'
-    - 'DISCLAIMER'
+    # License and notice files
+    - 'licenses'
     - 'LICENSE'
     - 'NOTICE'
-    - 'licenses'
+
+    # Documentation and configuration files
+    - '**/*.md'
+    - '**/Cargo.lock'
+    - 'rust-toolchain'
+    - '**/*.lds'
+
+    # Cryptographic and binary files for testing
+    - '**/*.pem'
+    - '**/*.key' 
+    - '**/*.crt'
+    - '**/*.rsa'
+    - '**/*.der'
+
+dependency:
+  files:
+    - 'Cargo.toml'

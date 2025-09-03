@@ -1,4 +1,4 @@
-# Teaclave: Empowering Memory-Safe Trusted Applications
+# Apache Teaclave™: Empowering Memory-Safe Trusted Applications
 
 Welcome to the Teaclave ecosystem. Teaclave empowers developers to build 
 **memory-safe** Trusted Applications 

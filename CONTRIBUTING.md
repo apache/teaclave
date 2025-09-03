@@ -26,7 +26,7 @@ mailing list.
 ## GitHub Issues
 
 You can also ask questions, propose features, and report bugs in Teaclave's
-[GitHub issues](https://github.com/apache/incubator-teaclave/issues). Watch the
+[GitHub issues](https://github.com/apache/teaclave/issues). Watch the
 project on GitHub to receive latest updates.
 
 ## Contributing
