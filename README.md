@@ -1,9 +1,9 @@
-# Teaclave: Empowering Building Memory Safe Trusted Applications in Confidential Computing
+# Apache Teaclave™: Empowering Building Memory Safe Trusted Applications in Confidential Computing
 
 [![License](https://img.shields.io/badge/license-Apache-green.svg)](LICENSE)
 [![Homepage](https://img.shields.io/badge/site-homepage-blue)](https://teaclave.apache.org/)
 
-Welcome to the main repository of the **Teaclave** project, an open-source initiative under the Apache Incubator. Teaclave empowers developers to build **memory-safe** Trusted Applications across diverse **confidential computing platforms**, including Intel SGX and Arm TrustZone.
+Welcome to the main repository of the **Teaclave** project, an open-source initiative under the Apache Software Foundation. Teaclave empowers developers to build **memory-safe** Trusted Applications across diverse **confidential computing platforms**, including Intel SGX and Arm TrustZone.
 
 Originally built as a general-purpose secure computing framework, Teaclave has evolved into a vibrant ecosystem focused on **SDKs** that enable developers to directly build custom Trusted Applications. This shift has been driven by how the community naturally adopted and extended the project.
 
@@ -11,10 +11,10 @@ Originally built as a general-purpose secure computing framework, Teaclave has e
 
 Teaclave currently maintains SDKs for multiple Trusted Execution Environment (TEE) platforms:
 
-- 🔐 [Teaclave SGX SDK](https://github.com/apache/incubator-teaclave-sgx-sdk) — A Rust-based SDK for Intel SGX
-- 🔐 [Teaclave TrustZone SDK](https://github.com/apache/incubator-teaclave-trustzone-sdk) — A Rust-based SDK for Arm TrustZone
-- ☕ [Teaclave Java TEE SDK](https://github.com/apache/incubator-teaclave-java-tee-sdk) — An experimental Java SDK for TEEs
-- 📦 [Teaclave Dependency Crates](https://github.com/apache/incubator-teaclave-crates) — A collection of ported and TEE-tailored Rust dependencies.
+- 🔐 [Teaclave SGX SDK](https://github.com/apache/teaclave-sgx-sdk) — A Rust-based SDK for Intel SGX
+- 🔐 [Teaclave TrustZone SDK](https://github.com/apache/teaclave-trustzone-sdk) — A Rust-based SDK for Arm TrustZone
+- ☕ [Teaclave Java TEE SDK](https://github.com/apache/teaclave-java-tee-sdk) — An experimental Java SDK for TEEs
+- 📦 [Teaclave Dependency Crates](https://github.com/apache/teaclave-crates) — A collection of ported and TEE-tailored Rust dependencies.
 
 These SDKs form the foundation for building secure and reliable TEE-based applications.
 

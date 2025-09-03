@@ -14,7 +14,7 @@
 # limitations under the License.
 
 github:
-  description: "Apache Teaclave (incubating) is an open source universal secure computing platform, making computation on privacy-sensitive data safe and simple."
+  description: "Apache Teaclave™ is an open source universal secure computing platform, making computation on privacy-sensitive data safe and simple."
   homepage: https://teaclave.apache.org
   labels:
     - confidential-computing
