@@ -32,6 +32,7 @@ header:
     - '**/Cargo.lock'
     - 'rust-toolchain'
     - '**/*.lds'
+    - '**/*.json'
 
     # Cryptographic and binary files for testing
     - '**/*.pem'
