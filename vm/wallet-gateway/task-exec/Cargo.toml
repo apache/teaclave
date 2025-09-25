@@ -1,0 +1,43 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+[package]
+name = "task-exec"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde-hex = "0.1.0"
+async-trait = "0.1"
+log = "0.4"
+anyhow = "1.0"
+thiserror = "1.0"
+reqwest = { version = "0.11.18", features = ["json", "multipart"] }
+url = { version = "2.1.1", features = ["serde"] }
+
+ethabi = "14.0.0"
+hex = { version = "0.4", features = ["serde"] }
+
+db-manager = { path = "../db-manager" }
+types = { path = "../share/types" }
+proto = { path = "../share/proto" }
+tls-client-processing = { path = "../tls-client-processing" }
+storable = { path = "../storable" }
+net = { path = "../net" }
+utils = { path = "../utils" }

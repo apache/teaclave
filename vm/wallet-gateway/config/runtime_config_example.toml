@@ -1,0 +1,70 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+[internal_endpoints]
+# ---- app servers configuration:
+api_server = { listen_address = "0.0.0.0:8441", advertised_address = "http://localhost:8441" }
+authority_server = { listen_address = "0.0.0.0:8442", advertised_address = "http://localhost:8442" }
+db_service = { listen_address = "0.0.0.0:8543", advertised_address = "http://localhost:8543" }
+
+# ---- TEE service configuration:
+tee_wallet = { listen_address = "0.0.0.0:54432", advertised_address = "https://localhost:54432" }
+
+[blockchain_network]
+# ---- specific configuration:
+network_type = "Testnet"
+# network_type = "Mainnet"
+
+# ---- common configuration:
+currency_query_base_url = "https://api.coingecko.com/api/v3/simple/price"
+
+eth_default_gas_limit = "21000" # string of u128
+erc20_default_gas_limit = "80000" # string of u128
+gas_price_percentage_increase = 0.2
+
+delegation_attempt_intervals = 60
+
+# automatically sign tx after all staged are approved
+auto_sign = true
+
+[task]
+# task-runner execution intervals
+task_exec_intervals = 30
+
+# email service domain
+email_domain =  "mail.this.is.example.com"
+
+[user_auth_info]
+auth_service_url = "https://www.this.is.example.com"
+
+[storage]
+# root_path = $CK_ROOT_PATH, please set it before starting server
+# the below items set subpath as $CK_ROOT_PATH/*
+# this config file path is hardcoded as: config = "config/runtime_config.toml"
+
+# CA cert, CA keys
+certs_path = "certs/"
+
+# db server base path
+db_path = "db/"
+
+# authority export files
+export_path = "export/"
+export_base_url = "https://www.this.is.example.com/export/"
+
+# logs
+log_path = "log/"
